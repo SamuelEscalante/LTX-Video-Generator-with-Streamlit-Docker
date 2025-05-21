@@ -70,9 +70,8 @@ Implementacion sencilla en una aplicación web para generar videos de alta calid
     docker run -p 8501:8501 -e REPLICATE_API_TOKEN=tu_token_aqui ltx-video
     ```
 
-    > [!WARNING]  
-    > Asegurate de que Docker este corriendo
-
+  > [!WARNING]  
+  > Asegurate que Docker se este ejecutando
 ---
 
 Si todo salio bien tu proyecto deberia ejecutarse en `https://localhost:8501` y se deberia ver algo asi:
