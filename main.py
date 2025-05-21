@@ -1,6 +1,7 @@
 import streamlit as st
 from app.pages.inicio import inicio
 from app.pages.description import descripcion
+from app.pages.architecture import arquitectura
 from app.pages.generator import generador
 from app.pages.acerca_de import acerca_de
 
