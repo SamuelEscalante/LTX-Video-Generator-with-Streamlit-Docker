@@ -22,6 +22,8 @@ def main():
         inicio()
     elif opcion == "📄 Descripción":
         descripcion()
+    elif opcion == "🏗️ Arquitectura":
+        arquitectura()
     elif opcion == "🎬 Generación de Video":
         generador()
     elif opcion == "👨‍💻 Acerca de":
