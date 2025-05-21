@@ -14,6 +14,7 @@ def main():
         (
             "🏠 Inicio",
             "📄 Descripción",
+            "🏗️ Arquitectura",
             "🎬 Generación de Video",
             "👨‍💻 Acerca de"
         )
