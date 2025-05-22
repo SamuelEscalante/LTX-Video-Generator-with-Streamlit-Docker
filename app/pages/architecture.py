@@ -24,9 +24,10 @@ def arquitectura():
     ### Diagrama de Arquitectura
     """)
 
-    # 👇 Carga de imagen local
-    image = Image.open("docs/_static/text_embedding.png")
-    st.image(image, caption="Arquitectura de LTX-Video: integración del texto en el pipeline de difusión", use_column_width=True)
+    image = Image.open("docs/_static/arquitectura.png")
+    st.image(image, caption="""La arquitectura Video-VAE de LTX-Video:
+                                (a) Codificador Causal que utiliza convoluciones causales 3D, aplicando una compresión de 32 x 32 x 8 (excepto el primer fotograma, que se codifica como un fotograma latente separado).
+                                (b) Decodificador de Denoising con condicionamiento por pasos de difusión e inyección de ruido en múltiples capas.""", use_column_width=True)
 
     st.markdown("""
     ### 🧪 Enlace al paper

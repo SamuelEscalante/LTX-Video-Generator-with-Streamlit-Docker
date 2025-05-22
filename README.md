@@ -14,6 +14,35 @@ Implementacion sencilla en una aplicación web para generar videos de alta calid
 - Interfaz amigable con previsualización de resultados
 - Despliegue local o en la nube con Docker
 
+## Arquitectura General
+
+LTX-Video combina tres componentes clave:
+
+1. **Video-VAE (Autoencoder Variacional)**
+   - Codifica y decodifica videos en un espacio latente altamente comprimido (compresión 1:192).
+   - El decodificador realiza también el **último paso de denoising**.
+   - Sustituye el uso de "patchifiers" con una codificación compacta espaciotemporal (32×32×8).
+
+2. **Modelo de Difusión en el Espacio Latente**
+   - Realiza el proceso de generación en el espacio comprimido, lo que reduce significativamente el número de tokens.
+   - Utiliza un **Transformer con atención espaciotemporal**.
+
+3. **Text-to-Latent Conditioning**
+   - Usa atención cruzada (Cross-Attention) para alinear texto y video.
+   - Las descripciones textuales se codifican y guían el proceso de denoising latente.
+
+
+##  Principales Innovaciones
+
+- 🔹 **Compresión extrema** del video en el espacio latente: `1:192`, logrando una relación de `1:8192` entre píxeles y tokens.
+- 🔹 **Denoising final integrado en el decodificador VAE**, reduciendo coste computacional y mejorando calidad.
+- 🔹 **Codificación posicional fraccional relativa**, que mejora la generalización en tiempo y espacio.
+- 🔹 **Normalización QK** para queries y keys en atención, evitando valores extremos y pérdida de entropía.
+- 🔹 Reemplazo de `LayerNorm` por `RMSNorm`, optimizando estabilidad y rendimiento en video.
+- 🔹 Entrenamiento sin necesidad de GANs, usando difusión latente para mayor control y coherencia.
+
+---
+
 ## Ejemplos Texto a Video 
 | | | |
 |:---:|:---:|:---:|
