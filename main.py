@@ -46,7 +46,7 @@ def main():
         "📝 Descripción",
         "🏗️ Arquitectura",
         "🎬 Generación de Video",
-        "✉️ Acerca De"
+        "ℹ️ Acerca De"
     ])
 
     with tabs[0]:

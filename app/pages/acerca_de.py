@@ -22,12 +22,12 @@ def acerca_de():
     """, unsafe_allow_html=True)
 
     st.markdown('<div class="spacer"></div>', unsafe_allow_html=True)
-    st.markdown('<h1 class="fadein" style="animation-delay:0.1s">👨‍💻 Acerca del Proyecto</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="fadein" style="animation-delay:0.1s"> ℹ️ Acerca del Proyecto</h1>', unsafe_allow_html=True)
     st.markdown('<div class="spacer"></div>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class="fadein" style="animation-delay:0.2s">
-    Ésta <b>interfaz</b> fue desarrollada por estudiantes de Ingeniería de Datos e Inteligencia Artificial:
+    Ésta <b>interfaz</b> fue desarrollada por estudiantes de Ingeniería de Datos e Inteligencia Artificial: 👨‍💻 
     <ul>
         <li><b>Juan Camilo Burbano</b></li>
         <li><b>Samuel Escalante</b></li>
@@ -42,7 +42,7 @@ def acerca_de():
 
     st.markdown("""
     <div class="fadein" style="animation-delay:0.3s">
-    <b>Nota:</b><br>
+    <b>Importante ⚠️:</b><br>
     La herramienta <b>LTX Video</b> no fue creada por nosotros. Todos los créditos y derechos pertenecen a sus autores originales.<br>
     Repositorio oficial de LTX Video en GitHub: <a href="https://github.com/Lightricks/LTX-Video">LTX Video in GitHub</a>
     </div>
@@ -52,7 +52,7 @@ def acerca_de():
 
     st.markdown("""
     <div class="fadein" style="animation-delay:0.4s">
-    <b>Importante:</b><br>
+    <b>Importante ⚠️:</b><br>
     Para ejecutar el modelo <b>LTX Video</b>, se utilizó la plataforma <a href="https://replicate.com/">Replicate</a> como API, debido a la alta complejidad computacional que requiere este modelo.
     </div>
     """, unsafe_allow_html=True)
